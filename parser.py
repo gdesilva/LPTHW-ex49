@@ -20,33 +20,38 @@
 # Our parser then has to use the functions we described and given a scanned
 # sentence, convert it into a List of Sentence objects to match the input.
 
-list in and then loop through
-def parser(listoftuples):
 
-scannedwords = [listoftuples]
-
-for t in scannedwords:
-
-    #start with matching and test this.
-
-    if t has
-        subject == player
-
-    if t has
-        verbs and stop == verb
-
-    if t has
-        noun and directions == object
-
-    if t has stop
-        drop it, skip
+# class ParserError(Exception):
+#     pass
+#
+# class Sentence(object):
+#
+#     def __init__(self, subject, verb, objects):
+#         self.subject
+#         self.verb
+#         self.objects
 
 
+def parser(word_list):
 
-# results go in here
-class Sentence(object):
-    subject
+    for wordtype, word in word_list:
 
-    verb
+        # if 'subject' in wordtype:
+        #     drop player, append new subject
 
-    object
+        if 'verb' in wordtype:
+            print 'it\'s a verb! the word is %s' % word
+
+        if 'noun' in wordtype:
+            print 'it\'s an object! the word is %s' % word
+
+        if 'directions' in wordtype:
+            print 'it\'s a direction! the word is %s' % word
+
+        if 'stop' in wordtype:
+            pass
+
+        # number handling
+
+parser([('verb', 'run'), ('directions', 'north')])
+

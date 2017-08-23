@@ -8,13 +8,12 @@
 # 5. A Sentence object to put the results in.
 
 
-# take in the tuple and make into a sentence
-
 # Sentence object with 3 sub classes/ attributes - subject, verb, and object
 
 # what can be subject - none = player (assumption) most of the time
 # what can be verb - verbs + stop (generally don't care about stop)
 # what can be object - nouns, directions
+
 # TODO: how to deal with numbers?
 
 # Our parser then has to use the functions we described and given a scanned
